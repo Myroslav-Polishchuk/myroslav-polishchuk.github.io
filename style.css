@@ -1,0 +1,2321 @@
+.header_back {
+    background-color: #27262b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+}
+
+.header {
+    min-width: 320px;
+    width: 100%;
+    height: 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1200px;
+}
+
+
+
+.header-logo {
+    font-family: Montserrat, sans-serif;
+    color: #8d81ac;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 16px;/* Approximation due to font substitution */
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 8px;
+
+}
+
+
+
+.header-logo:hover:before {
+    background-image: url(img/sprite/Shape2.png);
+    background-position: 0 0px;
+}
+
+.header-logo:hover, .header-logo:hover .header-logo--violet {
+    color: white;
+}
+
+.header-logo:before {
+    content: '';
+    display: inline-block;
+    width: 43px;
+    height: 41px;
+    background-image: url(img/spritesheet.png);
+    background-position: -43px -5px;
+    margin-right: 10px;
+}
+
+.header-logo:hover:before {
+    background-image: url(img/sprite/Logoh.svg);
+}
+
+.header-logo--violet {
+    font-family: Montserrat, sans-serif;
+    color:  #8d81ac;
+    font-weight: 400;
+    line-height: 16px;/* Approximation due to font substitution */
+    text-align: left;
+}
+
+.header-btn-buy {
+    background-color:  #8d81ac;
+    min-width: 80px;
+    max-width: 150px;
+    height: 40px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 700;
+}
+
+.header-btn-buy:hover {
+    background-color: white;
+    border: 1px solid #8d81ac;
+    color: #8d81ac;
+    box-sizing: border-box;
+}
+
+.header-btn-menu {
+    width: 26px;
+    height: 21px;
+    border: 0px;
+    display: inline-block;
+    background: url(img/spritesheet.png) no-repeat;
+    background-position: -5px -56px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.header-btn-menu:hover + .header-menu-hover {
+    display: flex;
+}
+
+.header-btn-menu:before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: -7px;
+    display: inline-block;
+    background-color:  #f4f4f4;
+    width: 1px;
+    height: 34px;
+}
+
+.header-menu-hover {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.header-menu-hover:hover {
+    display: flex;
+}
+
+
+
+.header-menu-hover__link:first-child {
+    display: block;
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+    cursor: default;
+}
+
+
+
+
+
+.header-menu-hover__link {
+    display: flex;
+    width: 100%;
+    height: 106.8px;
+    background-color: #333333;
+    box-sizing: border-box;
+    padding-left: 33px;
+    align-items: center;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.04);
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 32.01px;
+    font-weight: 400;
+    position: relative;
+}
+
+
+.header-menu-hover__link:before {
+    content: '';
+    display: none;
+    width: 4px;
+    height: 53px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+}
+
+.header-menu-hover__link:hover {
+    color:  #8d81ac;
+
+}
+
+.header-menu-hover__link:hover:before {
+    display: block;
+}
+
+.header-menu {
+    display: none;
+    width: 68%;
+    justify-content: space-between;
+
+}
+
+.header-menu__link {
+    font-family: Montserrat, sans-serif;
+    color:  #8d81ac;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 15px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.header-menu__link:hover {
+    color:  #ffffff;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+
+
+}
+
+
+.section-forkApp {
+    height: 731px;
+    position: relative;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background-image: url(img/img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.section-forkApp-blackBackground {
+    position: absolute;
+    z-index: -2;
+    background-color: #010005;
+    width: 100%;
+    height: 100%;
+}
+
+.section-forkApp__title {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 54.01px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+    margin-top: 101px; }
+
+
+.section-forkApp__text {
+    margin-top: 61px;
+    text-transform: capitalize;
+    font-family: Montserrat, sans-serif;
+    color:  #8d81ac;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24.944px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+.section-forkApp__version {
+    margin-top: 23px;
+    font-family: Montserrat, sans-serif;
+    color:  #848e97;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 15px;/* Approximation due to font substitution */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-forkApp__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -65px;
+    width: 100%;
+}
+
+.section-forkApp__container-download-btn {
+    border: 0;
+    background-color:  #8d81ac;
+    width: 81%;
+    max-width: 390px;
+    height: 62px;
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 15px;/* Approximation due to font substitution */
+    text-align: center;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.section-forkApp__container-download-btn:hover {
+    background-color: white;
+    border: 1px solid #8d81ac;
+    color: #8d81ac;
+    box-sizing: border-box;
+}
+.section-forkApp__container-underBtn {
+    margin-top: 19px;
+    font-family: Montserrat, sans-serif;
+    color:  #848e97;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 15px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+.section-revolutionaryEditor {
+    padding: 0 26px;
+    padding-top: 135px;
+    padding-bottom: 39px;
+    max-width: 1380px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section-revolutionaryEditor__title {
+
+    font-family: Montserrat, sans-serif;
+    color:  #635c73;
+    font-size: 30px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 35.214px;/* Approximation due to font substitution */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-revolutionaryEditor__text {
+    margin-top: 54px;
+    font-family: Lato, sans-serif;
+    color:  #323232;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 19.074px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+
+
+.section-revolutionaryEditor__github {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    flex-wrap: wrap;
+}
+
+.section-revolutionaryEditor__github-elem {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    text-transform: capitalize;
+    max-width: 128px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+.section-revolutionaryEditor__github-elem:first-child {
+    margin-right: 10px;
+}
+
+
+
+.section-revolutionaryEditor__github-elem:last-child {
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.section-revolutionaryEditor__github-elem a {
+    width: 100%;
+}
+
+
+.section-revolutionaryEditor__github-elem__btn {
+    height: 28px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: center;
+    padding: 3px 10px;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border: 1px solid rgba(27,31,35,0.2);
+    border-top-left-radius: 0.25em;;
+    border-bottom-left-radius: 0.25em;;
+    background-size: 110% 110%;
+    color: #24292e;
+    box-sizing: border-box;
+    line-height: 15px;
+}
+
+.section-revolutionaryEditor__github-elem__btn:hover {
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    background-position: -.5em;
+    border-color: rgba(27,31,35,0.35);
+}
+
+.section-revolutionaryEditor__github-elem__counter {
+    height: 28px;
+    float: left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,0.2);
+
+    box-sizing: border-box;
+}
+
+.section-revolutionaryEditor__github-elem__counter:hover {
+    color: #0366d6;
+}
+
+.section-revolutionaryEditor__github-elem__btn-img {
+    margin-right: 4px;
+}
+
+.section-here-is-what {
+    background-color:  #f4f4f4;
+    padding: 0 8px;
+    padding-top: 47px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.section-here-is-what__title {
+
+    font-family: Montserrat, sans-serif;
+    color:  #8d81ac;
+    font-size: 42px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 39.616px;/* Approximation due to font substitution */
+    text-align: center;
+    margin-bottom: 68px;
+    position: relative;
+}
+
+.title--hide {
+    display: none;
+}
+
+.section-here-is-what__title:before {
+    content: '<';
+    display: inline;
+
+}
+
+.section-here-is-what__title:after {
+    content: '>';
+    display: inline;
+
+}
+
+.section-here-is-what__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 57px;
+}
+
+.section-here-is-what__list-elem {
+    width: 100%;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-here-is-what__list-elem:last-child {
+    margin-bottom: 0px;
+}
+
+.section-here-is-what__list-elem__title {
+    font-family: Montserrat, sans-serif;
+    color:  #323232;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 15.406px;/* Approximation due to font substitution */
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 21px;
+}
+
+.section-here-is-what__list-elem__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:  #848e97;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.406px;
+    text-align: left;
+}
+
+.section-here-is-what__container-for-big-foto {
+    /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+    width: 100%;
+    height: 580px;
+    position: relative;
+
+}
+
+.section-here-is-what__container-for-big-foto img {
+    position: absolute;
+    box-shadow: 0px 0px 25px 0px rgba(0, 5, 5, 0.3);
+}
+
+
+.section-here-is-what__list-elem__container {
+    min-width: 111px;
+    position: relative;
+    margin-right: 8px;
+}
+
+.section-here-is-what__list-elem__container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.section-here-is-what-block-foto {
+    width: 100%;
+    max-width: 678px;
+}
+
+
+
+.section-steven {
+    padding: 0 8px;
+    padding-bottom: 60px;
+    padding-top: 71px;
+    box-sizing: border-box;
+
+}
+
+.section-steven__title {
+    width: 191px;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    color:  #474747;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-left: 108px;
+    text-transform: capitalize;
+    margin-bottom: 58px;
+
+}
+
+.section-steven__title:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url(img/userpic.jpg);
+    top: -22px;
+    left: -108px;
+}
+
+.section-steven--anotation {
+    color:  #8d81ac;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 32px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.section-steven__text {
+    width: calc(100% - 64px);
+    max-width: 557px;
+    font-family: 'Source Sans Pro';
+    color:  #333333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    transform: scaleX(1.0059);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    margin-bottom: 22px;
+}
+
+.section-steven__text-before {
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(img/ArrowL.svg);
+    top: calc(50% - 8px);
+    left: -33px;
+}
+
+.section-steven__text-after {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: -33px;
+    width: 9px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(img/ArrowR.svg);
+}
+
+.section-steven__text .section-steven--anotation {
+    line-height: 24px;
+}
+
+.section-steven--anotation-underline {
+    font-family: Montserrat, sans-serif;
+    color:  #848e97;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0059);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    margin-bottom: 57px;
+}
+
+.section-steven-social-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.section-steven-social-list-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-steven-social-list-elem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    width: 280px;
+    height: 50px;
+    font-size: 21px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 32px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+.section-steven-social-list-elem--github {
+    color:  black;
+    background-color:  #f3f3f3;
+}
+
+.section-steven-social-list-elem--github:hover {
+    background-color:  #2b414d;
+    color:  #f3f3f3;
+}
+
+.section-steven-social-list-elem--github:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 24px;
+    top: 15px;
+    background-image: url(img/icon.svg);
+}
+
+.section-steven-social-list-elem--github:hover:before {
+    background-image: url(img/iconcopy.svg);
+}
+
+
+
+.section-steven-social-list-elem--twitter {
+    background-color:  #26a6d1;
+    color: white;
+
+}
+
+.section-steven-social-list-elem--twitter:hover {
+    border: 1px solid #26a6d1;
+    color:  #26a6d1;
+    background-color:  #ffffff;
+}
+
+
+.section-steven-social-list-elem--twitter:hover:before {
+    background-image: url(img/birdcopy.svg);
+}
+
+
+
+.section-steven-social-list-elem--twitter:before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    left: 24px;
+    top: 18px;
+    background-image: url(img/bird.svg);
+}
+
+.section-steven-social-list-elem--facebook {
+    background-color:  #3b5998;
+    color: white;
+}
+
+.section-steven-social-list-elem--facebook:hover {
+    color:  #3b5998;
+    border: 1px solid #3b5998;
+    background-color:  #ffffff;
+}
+
+
+
+.section-steven-social-list-elem--facebook:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    background-image: url(img/f.svg);
+    top: 17px;
+    left: 26px;
+}
+
+.section-steven-social-list-elem--facebook:hover:before {
+    background-image: url(img/fcopy.jpg);
+}
+
+.section-steven-social-list-info {
+    font-family: Montserratб, sans-serif;
+    color:  #848e97;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+}
+
+
+
+.section-steven-social-list-elem:last-child {
+    margin-bottom: 0px;
+}
+
+
+.section-peopleTalking {
+    width: 100%;
+    padding-top: 77px;
+    padding-bottom: 39px;
+    background-position: 0px 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.peopleTalking__firstback {
+    width: 100%;
+    height: 100%;
+    background-color:  #4b3b4e;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.peopleTalking__secondback {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 14px;
+    left: 0;
+}
+
+
+
+
+
+
+.section-peopleTalking__title {
+
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 42px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 44px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 99px;
+    text-transform: capitalize;
+
+}
+
+.section-peopleTalking__list-partner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 81px;
+    box-sizing: border-box;
+    padding-top: 80px;
+
+}
+
+.section-peopleTalking__list-partner-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 68%;
+    position: relative;
+    margin-bottom: 145px;
+    box-sizing: border-box;
+
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+    max-height: 62px;
+}
+
+.section-peopleTalking__list-partner-elem:last-child {
+    margin: 0;
+}
+
+.section-peopleTalking__list-partner-elem__link {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+
+
+}
+.section-peopleTalking__list-partner-elem__link img {
+    position: relative;
+    left: -50%;
+
+}
+
+.section-peopleTalking__list-endLine {
+    background-color:  rgba(199, 199, 199, 0.2);
+    width: 350px;
+    max-width: 780px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+
+.section-peopleTalking {
+    width: 100%;
+    padding-top: 77px;
+    padding-bottom: 39px;
+    background-position: 0px 0px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.peopleTalking__firstback {
+    width: 100%;
+    height: 100%;
+    background-color:  #4b3b4e;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.peopleTalking__secondback {
+    width: 100%;
+    opacity: hidden;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 14px;
+    left: 0;
+}
+
+.peopleTalking__secondback img {
+    max-width: 100%;
+}
+
+.peopleTalking__secondback img:first-child {
+    margin-bottom: 387px;
+}
+
+
+
+
+
+
+
+
+.section-peopleTalking-pricelist {
+    width: 100%;
+    padding: 0 48px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.section-peopleTalking-pricelist__title {
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 40px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 40px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-peopleTalking-pricelist__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: 1200px;
+}
+
+.section-peopleTalking-pricelist__list li{
+    margin-bottom: 14px;
+}
+
+.section-peopleTalking-pricelist__list button:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    color:  #7f6d78;
+    font-weight: 700;
+}
+.section-peopleTalking-pricelist__list li:last-child {
+    margin: 0;
+}
+
+.section-peopleTalking-pricelist__list-elem {
+    width: 67%;
+    height: 457px;
+    max-width: 257px;
+}
+
+.section-peopleTalking-pricelist__list-elem__type {
+    width: 100%;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.06);
+
+
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 15px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.section-peopleTalking-pricelist__list-elem__mainBlock {
+    width: 100%;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-bottom: 38px;
+
+}
+
+.section-peopleTalking-pricelist__list-elem__price {
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 60px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 60px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section-peopleTalking-pricelist__list-elem__period {
+    font-family: Montserrat,sans-serif;
+    color:  #ffffff;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-peopleTalking-pricelist__list-elem__line {
+    background-color:  #8d81ac;
+    width: 60px;
+    height: 5px;
+    margin-bottom: 30px;
+}
+
+.section-peopleTalking-pricelist__list-elem__license {
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.section-peopleTalking-pricelist__list-elem__btn {
+    border: 0;
+    border-radius: 40px;
+    width: 160px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.15);
+
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 15px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+
+
+
+
+.elem--agency {
+    max-width: 299px;
+    width: 78%;
+    height: 560px;
+}
+.type--agency {
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.11);
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 15px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+
+}
+
+.list-elem__mainBlock--agency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 47px;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.list-elem__price {
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 82px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 82px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 21px;
+
+}
+
+.list-elem__period {
+    font-family: Montserrat, sans-serif;
+    color:  #79707c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.list-elem__line {
+    background-color:  #8d81ac;
+    width: 60px;
+    height: 5px;
+    margin-bottom: 41px;
+}
+
+.list-elem__license {
+    max-width: 160px;
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 21px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+
+.list-elem__btn {
+    border: 0;
+    border-radius: 40px;
+    width: 190px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.15);
+
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.section-peopleTalking-pricelist__lastText {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:  rgba(162, 145, 165, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    max-width: 361px;
+
+}
+
+
+.section-email__firstContainer {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.section-email__firstblock {
+    width: 100%;
+    background-color:  #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 8px 23px 8px;
+    box-sizing: border-box;
+    max-width: 1380px;
+
+}
+
+.section-email__title {
+    font-family: Montserrat, sans-serif;
+    color:  #323232;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+.section-email__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-email__form-email {
+    border: 0;
+    border-radius: 21px;
+    background-color:  #ffffff;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 16px 28px 15px 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+
+}
+
+.section-email__form-subsribe {
+    border: 0;
+    border-radius: 21px;
+    background-color:  #8d81ac;
+    width: 140px;
+    height: 40px;
+    font-family: Montserrat, sans-serif;
+    color:  #ffffff;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 12px;/* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-email__form-subsribe:hover {
+    border: 1px solid #8d81ac;
+    background-color:  #ffffff;
+    color: #8d81ac;
+}
+
+.section-email-contact {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top:  38px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+
+}
+
+.section-email-contact__title {
+    display: block;
+    margin-left: 61px;
+    margin-bottom: 36px;
+    font-family: Montserrat, sans-serif;
+    color:  #333333;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-email-contact__title:hover .section-email-contact__title--color {
+    color:  #333333;
+}
+
+.section-email-contact__title:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 41px;
+    top: -12px;
+    left: -62px;
+    background-image: url(img/sprite/Shape.png);
+}
+
+.section-email-contact__title:hover:before {
+    background-image: url(img/sprite/ShapeHover.jpg);
+}
+
+.section-email-contact__title--color {
+    color:  #8d81ac;
+}
+
+
+.section-email-contact__text {
+    width: 100%;
+    font-family: Montserrat,sans-serif;
+    color:  #848e97;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 21px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 36px;
+
+}
+
+.section-email-contact__title-navigation {
+    font-family: Montserrat, sans-serif;
+    color:  #323232;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+
+.section-email-contact__navigation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+
+}
+.section-email-contact__navigation-link {
+    font-family: Montserrat, sans-serif;
+    color:  #8d81ac;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    text-transform: capitalize;
+
+    display: inline;
+
+}
+
+.section-email-contact__navigation-link:hover {
+    border-bottom: 1px solid #8d81ac;
+}
+
+.section-email-contact__navigation-link-continer {
+    margin-bottom: 8px;
+}
+.section-email-contact__navigation-link-continer:last-child {
+    margin-bottom: 0px;
+}
+
+.section-email-contact__phoneNumber {
+    font-family: Montserrat, sans-serif;
+    color:  #31384d;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 225px;
+    margin-bottom: 15px;
+
+}
+
+.section-email-contact__phoneNumber--underNumber {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color:  #848e97;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 12px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 38px;
+    display: inline-block;
+}
+
+.section-email-contact__adress {
+    font-family: Montserrat, sans-serif;
+    color:  #323232;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section-email-contact__adress-under {
+    font-family: Montserrat, sans-serif;
+    color:  #848e97;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    display: inline-block;
+    width: 220px;
+    margin-bottom: 39px;
+}
+
+.section-email-contact__info-title {
+    font-family: Montserrat, sans-serif;
+    color:  #323232;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.section-email-contact__info-text {
+    font-family: Montserrat, sans-serif;
+    color:  #848e97;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 23px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section-email-contact-firstblock {
+    width: 250px;
+
+}
+
+.section-email__form-email::-webkit-input-placeholder {
+    font-family: Montserrat, sans-serif;
+    color:  #c8cbcf;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+
+
+
+
+@media (min-width: 400px) {
+
+
+    .header-logo {
+        margin-right: 36px;
+    }
+
+    .header-btn-buy {
+        width: 100%;
+    }
+    .header-btn-menu {
+
+        margin-left: 30px;
+    }
+    .section-revolutionaryEditor__title {
+        font-size: 35px;
+    }
+    .section-steven {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .section-email__title {
+        font-size: 28px;
+    }
+
+    .section-email__form-email {
+
+        height: 42px;
+    }
+    .section-email__form-subsribe {
+        min-width: 100px;
+        height: 42px;
+    }
+    .section-email-contact {
+        padding-left: 17px;
+        padding-right: 19px;
+    }
+
+
+
+}
+
+@media (min-width: 480px) {
+    .header-logo {
+        margin-right: 45px;
+    }
+
+    .header-btn-menu {
+        margin-left: 53px;
+    }
+
+    .section-revolutionaryEditor {
+        padding-bottom: 78px;
+    }
+
+    .section-revolutionaryEditor__title {
+        font-size: 42px;
+    }
+
+    .section-revolutionaryEditor__github-elem__counter {   border-left: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+
+    .section-here-is-what {
+        padding-left: 26px;
+        padding-right: 16px;
+        padding-top: 47px;
+    }
+
+    .section-here-is-what__list-elem__container {
+        margin-right: 24px;
+    }
+    .section-steven {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .section-email__firstblock {
+        padding: 50px 15px 46px 15px;
+
+    }
+
+    .section-email__title {
+        margin: 0 53px 45px 36px;
+    }
+
+    .section-email-contact {
+        padding-top: 66px;
+        padding-left: 34px;
+        padding-right: 36px;
+    }
+
+    .section-email-contact__text {
+        width: 100%
+    }
+    .section-email-contact__into-text {
+        margin-bottom: 69px;
+    }
+
+    .section-email-contact {
+        padding-left: 34px;
+        padding-right: 36px;
+    }
+
+    .section-email__form-email {
+        min-width: 200px;
+        width: calc(50% - 15px);
+        margin-bottom: 26px;
+    }
+
+    .section-email__form-email:first-child {
+        margin-right: 30px;
+    }
+
+    .section-email__form {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .section-steven-social-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-peopleTalking-pricelist__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+    }
+
+    .section-peopleTalking-pricelist__list-elem {
+        width: 48%;
+        height: 457px;
+        min-width: 200px;
+
+    }
+
+    .section-peopleTalking-pricelist__list-elem:first-child {
+        margin-right: 4%;
+    }
+
+    .elem--agency {
+        width: 50%;
+        margin-right: 2%;
+        min-width: 0;
+    }
+    .section-peopleTalking__list-partner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-peopleTalking__list-partner-elem {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .section-peopleTalking__list-partner-elem:last-child {
+        margin-bottom: 145px;
+    }
+
+
+
+    .section-revolutionaryEditor__github-elem {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .section-revolutionaryEditor__github-elem:first-child {
+        margin: 0;
+        margin-right: 10px;
+      }
+    .section-revolutionaryEditor__github-elem:last-child {
+        margin: 0;
+    }
+
+
+
+
+}
+
+@media (min-width: 481px) {
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 124px;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+    }
+    .header-menu-hover, .header-btn-menu {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 522px;
+    }
+    .section-steven-social-list {
+        justify-content: center;
+    }
+
+    .section-steven-social-list-elem {
+        max-width: 240px;
+        width: 49%;
+    }
+    .section-steven-social-list-elem:first-child {
+        margin-right: 2%;
+    }
+
+    .section-steven-social-list-elem a {
+        width: 100%;
+    }
+
+    .section-revolutionaryEditor__github {
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 522px) {
+    .header-menu {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .section-forkApp {
+        padding: 0px;
+        height: 676px;
+    }
+    .section-forkApp__title {
+        margin-top: 44px;
+        font-size: 72px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 80px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+
+    .section-forkApp__text {
+        margin-top: 18px;
+        font-size: 24px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 24px;/* Приближение из-за подстановки шрифтов */
+
+    }
+
+
+    .section-forkApp__version {
+        font-size: 14px;/* Приближение из-за подстановки шрифтов */
+        margin-top: 20px;
+    }
+
+    .section-email-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .section-email-contact-firstblock,
+    .section-email-contact-secondblock,
+    .section-email-contact-thirdblock,
+    .section-email-contact-fourthblock {
+        width: 285px;
+    }
+
+    .section-email-contact-firstblock,
+    .section-email-contact-secondblock {
+        margin-bottom: 50px;
+    }
+
+    .section-email-contact__info-text,
+    .section-email-contact__text,
+    .section-email-contact__navigation,
+    .section-email-contact__adress-under {
+        margin: 0;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+
+
+    .header-logo {
+        color:  #8d81ac;
+    }
+
+    .header-btn-menu {
+        display: none;
+        max-width: 145px;
+    }
+
+    .section-revolutionaryEditor {
+        padding: 0 48px;
+        padding-top: 156px;
+        padding-bottom: 98px;
+    }
+
+    .section-revolutionaryEditor__text  {
+        font-size: 16px;
+        margin-top: 38px;
+    }
+
+    .section-revolutionaryEditor__github {
+        margin-top: 36px;
+    }
+    .section-here-is-what {
+        padding-left: 30px;
+        padding-right: 37px;
+        padding-top: 54px;
+    }
+
+    .section-here-is-what__title {
+        margin-bottom: 60px;
+    }
+
+    .section-here-is-what__list-elem-info {
+        width: auto;
+
+
+    }
+
+    .section-here-is-what__list-elem__title {
+        margin-bottom: 17px;
+    }
+
+    .section-steven {
+        padding: 72px 34px 59px 34px;
+    }
+
+    .section-steven__text-before {
+        left: -68px;
+        top: 6px;
+    }
+
+    .section-steven__text-after {
+        right: -68px;
+        top: 6px;
+    }
+
+    .section-steven__text {
+        margin-bottom: 27px;
+    }
+
+    .section-steven--anotation-underline {
+        margin-bottom: 83px;
+    }
+
+
+
+
+    .section-steven-social-list-elem:last-child {
+        margin-bottom: 0px;
+    }
+    .section-steven-social-list-elem:first-child {
+        margin-right: 40px;
+    }
+
+    .section-peopleTalking {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section-peopleTalking__title {
+        margin-bottom: 96px;
+    }
+
+    .section-peopleTalking__list-partner-elem {
+        width: 41%;
+        margin-bottom: 145px;
+    }
+    .section-peopleTalking__list-partner-elem:last-child {
+        margin-bottom: 145px;
+    }
+
+    .section-peopleTalking__list-endLine {
+        margin-top: -75px;
+    }
+
+
+
+    .section-peopleTalking__list-partner {
+        padding: 0 16px;
+        padding-top: 80px;
+        margin: 0;
+        margin-bottom: 81px;
+    }
+    .peopleTalking__secondback img:first-child {
+        margin-bottom: 51px;
+    }
+    .section-peopleTalking-pricelist {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        padding-top: 61px;
+        padding-bottom: 71px;
+    }
+
+    .section-peopleTalking-pricelist__title {
+        margin-bottom: 47px;
+    }
+
+    .section-peopleTalking-pricelist__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 45px;
+        padding: 0 10%;
+        box-sizing: border-box;
+    }
+    .section-peopleTalking-pricelist__list-elem {
+        width: 47%;
+    }
+
+
+
+    .elem--agency {
+        position: relative;
+        left: -1%;
+    }
+
+    .section-peopleTalking-pricelist__lastText {
+        max-width: 674px;
+    }
+
+
+
+    .section-email__firstblock {
+        padding: 26px 31px 32px 31px;
+    }
+
+    .section-email__title {
+        color:  #635c73;
+        margin-bottom: 29px;
+    }
+
+    .section-email-contact {
+        padding: 66px 33px 120px 38px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .section-email-contact__title {
+        margin-left: 61px;
+        margin-bottom: 36px;
+    }
+
+
+    .section-email-contact {
+        padding-left: 39px;
+        padding-right: 33px;
+        margin-bottom: 120px;
+    }
+
+    .section-steven-social-list {
+        box-sizing: border-box;
+        padding: 0 10%;
+    }
+}
+
+@media (min-width: 880px) {
+    .header-menu {
+        padding: 0 200px;
+    }
+}
+@media (min-width: 920px) {
+    .section-email-contact-firstblock {
+        width: 301px;
+        margin-right: 20%;
+    }
+
+    .section-email-contact-secondblock {
+        width: 304px;
+
+    }
+
+    .section-email-contact-thirdblock {
+        width: 221px;
+    }
+
+    .section-email-contact-fourthblock {
+        width: 304px;
+    }
+}
+
+
+@media (min-width: 960px) {
+    .section-forkApp {
+        height: 698px;
+    }
+    .section-forkApp__title {
+        font-size: 82px;
+        line-height: 90px;
+        margin-top: 60px;
+    }
+
+    .section-forkApp__text {
+        margin-top: 18px;
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+
+    .section-forkApp__version {
+        font-size: 16px;
+        margin-top: 18px;
+    }
+
+    .section-revolutionaryEditor  {
+        padding: 0 125px;
+        padding-top: 129px;
+        padding-bottom: 70px;
+    }
+    .section-revolutionaryEditor__title {
+        font-size: 54px;
+        line-height: 54px;
+    }
+
+    .section-revolutionaryEditor__text  {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .section-email__title {
+        min-width: 210px;
+        font-size: 28px;
+    }
+
+    .section-email__form-subsribe {
+        margin: 0;
+    }
+    .section-email-contact-firstblock {
+        margin-right: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .header {
+        height: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .section-peopleTalking__list-partner {
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .section-peopleTalking__list-partner-elem {
+        width: calc(33% - 10px);
+        margin-right: 0;
+    }
+
+    .header {
+        justify-content: flex-end;
+    }
+
+    .header-menu {
+        padding: 0 50px;
+        margin: 0;
+    }
+
+    .header-logo {
+        order: 1;
+        margin-right: auto;
+
+
+    }
+
+    .header-menu {
+        order: 2;
+        margin: 0;
+        padding: 0;
+        max-width: 522px;
+    }
+
+    .header-btn-buy {
+        margin-left: 46px;
+        order: 3;
+
+
+    }
+
+    .section-here-is-what {
+        padding-right: 0;
+    }
+
+    .section-here-is-what__list {
+        width: 50%;
+    }
+
+    .section-here-is-what__list-elem-info {
+        max-width: 522px;
+    }
+
+    .section-here-is-what__title {
+        display: none;
+    }
+
+    .section-here-is-what {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .title--hide {
+        width: 100%;
+        text-align: left;
+        display: block;
+        font-size: 37px;
+    }
+
+    .section-here-is-what-block-foto {
+        width: 45%;
+    }
+
+    .section-peopleTalking-pricelist__list-elem {
+        min-width: 180px;
+        width: 23%;
+    }
+    .elem--agency {
+        min-width: 200px;
+        width: 27%;
+        margin: 0;
+    }
+
+    .section-steven-social-list {
+        padding: 0;
+    }
+
+    .section-steven-social-list-elem {
+        margin: 0;
+        margin-right: 40px;
+    }
+
+    .section-steven-social-list-elem:last-child {
+        margin: 0;
+    }
+
+    .section-email__firstblock {
+        height: 134px;
+        padding: 46px 60px;
+        flex-direction: row;
+    }
+
+    .section-email__form-email {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .section-email__form {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .section-email__title {
+        margin-bottom: 0;
+    }
+
+    .section-peopleTalking-pricelist__list {
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-peopleTalking-pricelist__list-elem {
+        margin: 0;
+    }
+
+    .section-peopleTalking-pricelist__list-elem:first-child {
+        margin: 0;
+    }
+
+    .elem--agency {
+        left: 0;
+    }
+    .section-peopleTalking-pricelist__list li {
+        margin: 0;
+    }
+
+    .section-email-contact-firstblock {
+        margin: 0;
+    }
+
+    .section-email-contact {
+        margin: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+
+    }
+
+    .section-email-contact > div {
+        width: 23%;
+    }
+
+
+
+
+
+}
+@media (min-width: 1200px) {
+    .header {
+        height: 100px;
+        justify-content: flex-end;
+    }
+
+    .header-logo {
+        order: 1;
+        margin-right: auto;
+
+    }
+
+
+    .header-btn-buy {
+        order: 3;
+        margin-left: 46px;
+
+    }
+
+
+
+    .section-revolutionaryEditor {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    .section-steven {
+        padding: 109px 216px 80px 216px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-steven__text {
+        max-width: 720px;
+        margin-right: 24px;
+    }
+
+    .section-steven--anotation-underline {
+        margin-bottom: 118px;
+    }
+
+
+
+    .section-steven__text-before {
+        left: -112px;
+    }
+
+    .section-steven__text-after {
+        right: -112px;
+    }
+
+
+
+    .section-here-is-what-block-foto {
+        width: calc(100% - 612px);
+
+    }
+
+    .section-here-is-what {
+        justify-content: center;
+        padding-top: 84px;
+    }
+    .section-here-is-what__list {
+        max-width: 500px;
+        margin-top: 16px;
+        margin-right: 112px;
+    }
+
+
+
+    .section-here-is-what__title {
+        width: auto;
+        display: none;
+    }
+
+    .title--hide {
+        display: block;
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .section-peopleTalking__list-partner {
+
+        height: 390px;
+        margin-bottom: 98px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1200px;
+    }
+    .section-peopleTalking__list-partner-elem {
+        max-width: 324px;
+        margin: 0;
+
+    }
+
+    .section-peopleTalking__list-partner-elem:last-child {
+        margin: 0;
+    }
+
+    .section-peopleTalking__list-endLine {
+        background-color:  rgba(199, 199, 199, 0.2);
+        width: 780px;
+        height: 1px;
+        margin: 0 auto;
+    }
+
+    .peopleTalking__secondback img:first-child {
+        margin-bottom: 27px;
+    }
+    .peopleTalking__secondback img:last-child {
+        margin-top: -300px;
+    }
+    .section-peopleTalking-pricelist {
+        padding-left: 133px;
+        padding-right: 135px;
+        padding-bottom: 77px;
+        padding-top: 79px;
+    }
+
+    .section-peopleTalking-pricelist__title {
+        margin-bottom: 71px;
+    }
+
+
+    .section-peopleTalking-pricelist__list {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 80px;
+    }
+
+    .section-peopleTalking-pricelist__lastText {
+        max-width: 862px;
+    }
+
+
+    .section-email__firstblock {
+        padding: 46px 90px;
+        align-items: center;
+    }
+
+
+
+
+    .section-email-contact-firstblock,
+    .section-email-contact-secondblock,
+    .section-email-contact-thirdblock,
+    .section-email-contact-fourthblock {
+        margin: 0;
+    }
+
+
+
+    .section-email-contact-secondblock {
+        width: 122px;
+    }
+
+    .section-email__form {
+        justify-content: flex-end;
+    }
+
+
+}
